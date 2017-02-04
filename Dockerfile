@@ -1,4 +1,4 @@
-FROM xmlangel/base-ubuntu:16.04
+FROM xmlangel/base-ubuntu
 VOLUME /home
 
 #RUN curl -L http://www.opscode.com/chef/install.sh | sudo bash
