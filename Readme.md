@@ -1,11 +1,11 @@
-chef-solo 사용 순서 요약
+#chef-solo 사용 순서 요약
 
 ## home directory 생생
 ## ./run.sh 으로 도커실행
 
-## 레시피 생성
-## JSON 파일로 실행할 레시피 지정
-## chef-solo 명령어로 실행
+### 레시피 생성
+### JSON 파일로 실행할 레시피 지정
+### chef-solo 명령어로 실행
 
 # git repo template 다운
 
@@ -52,7 +52,7 @@ chef-repo/localhost.json
 solo.rb 파일 생성
 ```
 file_cache_path "/tmp/chef-solo"
-cookbook_path ["/game/chef-repo/cookbooks"]
+cookbook_path ["/home/chef-repo/cookbooks"]
 ```
 chef-solo 실행
 ```
