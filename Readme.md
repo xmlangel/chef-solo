@@ -1,3 +1,12 @@
+chef-solo 사용 순서 요약
+
+## home directory 생생
+## ./run.sh 으로 도커실행
+
+## 레시피 생성
+## JSON 파일로 실행할 레시피 지정
+## chef-solo 명령어로 실행
+
 # git repo template 다운
 
 ```
@@ -61,23 +70,3 @@ chef-solo 실행
 [Mon, 14 Apr 2014 17:25:35 +0900] INFO: Running report handlers
 [Mon, 14 Apr 2014 17:25:35 +0900] INFO: Report handlers complete
 ```
-chef-solo 사용 순서 요약
-## 레시피 생성
-## JSON 파일로 실행할 레시피 지정
-## chef-solo 명령어로 실행
-
-
-# cookbook 생성
-knife cookbook create hello -o cookbooks
-
-#  recipes 생성
-vi recipes/default.rb
-# localhost.json 설정
-
-vi localhost.json
-
-# solo.rb 생성
-
-
-# 실행
-chef-solo -c solo.rb -j localhost.json
