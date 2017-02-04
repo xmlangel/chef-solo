@@ -6,19 +6,18 @@
 #
 # All rights reserved - Do Not Redistribute
 #
+
+#package repo update
 execute "apt-get-update-periodic" do
   command "apt-get update"
   ignore_failure true
-  #only_if do
-  #  File.exists?('/var/lib/apt/periodic/update-success-stamp') &&
-  #  File.mtime('/var/lib/apt/periodic/update-success-stamp') < Time.now - 86400
-  #end
 end
-
-package ["vim","gcc","htop"] do
+#install package
+package ["vim","htop"] do
 	action :install
 end
 
+#install knife-solo
 gem_package "knife-solo" do
 	action :install
 end
