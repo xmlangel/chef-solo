@@ -1,5 +1,5 @@
 FROM xmlangel/base-ubuntu:16.04
-#VOLUME /home
+VOLUME /home
 
 #RUN curl -L http://www.opscode.com/chef/install.sh | sudo bash
 #RUN apt-get install -y ruby-full
