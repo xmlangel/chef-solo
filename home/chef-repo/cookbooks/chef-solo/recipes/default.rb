@@ -38,7 +38,7 @@ directory '/root/.chef' do
 end
 
 # add knife.rb file
-file "/root/.chef/knife.rb" do
+cookbook_file "/root/.chef/knife.rb" do
 	owner "root"
 	group "root"
 	mode 00644
