@@ -1,1 +1,1 @@
-knife solo prepare whatap@$1
+knife solo prepare $1
