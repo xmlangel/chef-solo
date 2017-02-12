@@ -12,6 +12,10 @@
 ```
 git clone git://github.com/opscode/chef-repo.git
 ```
+또는
+```
+https://github.com/xmlangel/chef-solo.git
+```
 
 # knife configure
 knife configure
